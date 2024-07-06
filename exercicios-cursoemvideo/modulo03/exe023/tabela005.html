@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        div#conteiner {
+            overflow-x: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas:</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque provident aliquam, iste corporis libero voluptatibus totam nisi soluta amet sequi qui ad temporibus quod accusantium, deleniti id et officia assumenda!</p>
+
+    <div id="conteiner">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Notebook</td>
+                    <td>1200</td>
+                    <td>1500</td>
+                    <td>1800</td>
+                    <td>2000</td>
+                    <td>2200</td>
+                    <td>2500</td>
+                    <td>2800</td>
+                    <td>3000</td>
+                    <td>3300</td>
+                    <td>3500</td>
+                    <td>3800</td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td>800</td>
+                    <td>1100</td>
+                    <td>1400</td>
+                    <td>1700</td>
+                    <td>2000</td>
+                    <td>2300</td>
+                    <td>2600</td>
+                    <td>2900</td>
+                    <td>3200</td>
+                    <td>3500</td>
+                    <td>3800</td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                </tr>
+            </tbody>
+        
+        </table>
+    </div>
+    
+</body>
+</html>
