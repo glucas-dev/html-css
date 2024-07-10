@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Pseudoelementos</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        section {
+            border: 1px solid #000;
+            height: 100px;
+            margin: 40px auto;
+            width: 400px;
+        }
+
+        h1 {
+            background-color: #990000;
+            color: #fff;
+            left: -10px;
+            padding: 5px 0;
+            position: relative;
+            font-size: 1.2em;
+            text-align: center;
+            width: 420px;
+        }
+
+        h1::before {
+            border-color: transparent #7c0000 #7c0000 transparent;
+            border-style: solid;
+            border-width: 5px;
+            content: '';
+            left: 0;
+            position: absolute;
+            top: -8px;
+        }
+
+        h1::after {
+            border-color: transparent transparent #7C0000 #7C0000;
+            border-style: solid;
+            border-width: 5px;
+            content: '';
+            position: absolute;
+            right: 1px;
+            top: -8px;
+        }
+
+        .help {
+            background-color: #F1EFE6;
+            border: 1px solid #d3cdae;
+            font-size: 0.9em;
+            padding: 10px;
+            position: relative;
+            width: 300px;
+            margin: auto;
+        }
+
+        .help::before {
+            border-color: transparent #D3CDAE transparent transparent;
+            border-style: solid;
+            border-width: 20px;
+            content: '';
+            left: -40px;
+            margin-top: -18px;
+            position: absolute;
+            top: 50%;
+        }
+
+        .tip {
+            text-align: center;
+        }
+
+        .tip::before {
+            content: '\261E';
+            margin-right: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+   <section>
+    <h1>Um exemplo de pseudoelementos</h1>
+   </section>
+
+   <!-- Outra utilidade dos pseudoelementos é criar formas de botões
+que antes só era possível com o uso de imagens de fundo. -->
+
+   <p class="help">
+    Preencha o campo com um e-mail válido, assim poderemos entrar em contato com você para informar o resultado do nosso concurso.
+   </p>
+
+
+   <!-- Mas também podemos adicionar ícones e outros
+tipos de elementos decorativos para complementar o nosso
+conteúdo. -->
+
+   <p class="tip">
+    Você sabia que...
+   </p>
+<!-- 
+   Outro caso de uso para gerar conteúdo com pseudoelementos é
+ao adicionar estilo a elementos de citação, como o blockquote -->
+</body>
+</html>
