@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando padrões visuais</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href='print.css' media='print'>
+
+    <style>
+
+        .button {
+            background-color: #999999;
+            color: white;
+            display: inline-block;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            position: relative;
+            
+        }
+
+        .primary-button {
+            background-color: #389739;
+        }
+
+        .big-button {
+            font-size: 1.1em;
+        }
+
+        .small-button {
+            font-size: 0.9em;
+        }
+
+        @media print {
+            /* Este CSS só será aplicado quando a página for impressa */
+            * {
+            background: transparent !important;
+            color: #000 !important;
+            box-shadow: none !important;
+            color: #000 !important;
+            text-shadow: none !important;
+            }   
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+        <a href="#" class="button primary-button big-button">
+            Enviar mensagem
+        </a>
+
+        <a href="#" class="button small-button">
+            Cancelar
+        </a>
+    
+</body>
+</html>
