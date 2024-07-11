@@ -10,16 +10,42 @@
     <link rel="stylesheet" href= "http://fonts.googleapis.com/css?family=Press+Start+2P">
     
     <style>
-/*         
-        @font-face {
-            font-family: 'Lobster-Regular';
-            src: url(Lobster-Regular.ttf);
-            font-style: normal;
-            font-weight: 400;
-        } */
         
-        h1 {
-            font-family: 'Press Start 2P';
+        @font-face {
+            font-family: 'Iconic';
+            src: url(iconic_fill.woff);
+            font-style: normal;
+            font-weight: normal;
+        }
+        
+        .icon-next::after {
+            content: ' \2192';
+            font-family: 'Iconic';
+            margin-left: 10px;
+        }
+
+        h1.icon-next {
+            color: blue;
+        }
+
+        .icon-ok {
+            color: #489D00;
+        }
+
+        .icon-ok::before {
+            content: '\2714';
+            font-family: 'Iconic';
+            margin-right: 10px;
+        }
+
+        .icon-invalid {
+            color: #990000;
+        }
+
+        .icon-invalid::before {
+            content: '\2718';
+            font-family: 'Iconic';
+            margin-right: 10px;
         }
 
         
@@ -27,9 +53,18 @@
     </style>
 </head>
 <body>
-    <h1>Uso do @Font-face</h1>
+    <h1 class="icon-next">Avançar</h1>
 
-    <!-- PARAMOS NA PAGINA 85 DO LIVRO-->
+    <p class="icon-next">Ir para a próxima página</p>
+   
+
+    <!-- Outro exemplo são os clássicos ícones para ações feitas com sucesso ou erros de validações de formulários. -->
+    <p class="icon-ok">E-mail enviado com sucesso!</p>
+
+    <p class="icon-invalid">Atenção, preencha todos os campos do formulário.</p>
+
+
+ 
 </body>
 </html>
 

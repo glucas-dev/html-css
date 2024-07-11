@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Possibilidades com Bordas</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tnt {
+            border-radius: 50%;
+            border: 5px solid #000;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 50px;
+        }
+
+        .counter {
+            background-color: #000;
+            border-top-left-radius: 25px 10px;
+            border-top-right-radius: 25px 10px;
+            color: white;
+            display: block;
+            font-size: 1.7em;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 50px;
+        }
+
+        div {
+            background-color: #000;
+            width: 50px;
+            height: 10px;
+            padding: 20px 50px;
+            margin-top: 10px;
+        }
+
+        .cloud {
+            background-color: #fff;
+            border-radius: 48px;
+            display: inline-block;
+            height: 16px;
+            position: relative;
+            width: 48px;
+        }
+
+        .cloud::before, .cloud::after {
+            background-color: #FFF;
+            border-radius: 50%;
+            content: '';
+            height: 14px;
+            position: absolute;
+            right: 7px;
+            top: -6px;
+            width: 14px;
+            }
+
+        .cloud::after {
+            background-color: #FFF;
+            height: 23px;
+            left: 7px;
+            right: auto;
+            top: -10px;
+            width: 23px;
+        }
+    </style>
+</head>
+<body>
+        <h3 class="tnt">TNT</h3>
+
+        <!--Podemos usar porcentagens e criar círculos ou elipses,
+independente do tamanho real do elemento. Fora isto, cada canto
+do elemento pode receber dois valores para definir exatamente
+qual será o raio utilizado para criar o efeito.-->
+
+        <span class="counter">37</span>
+
+        <!--Criando nuvens com border-radius-->
+
+        <div>
+            <span class="cloud"></span>
+        </div>
+
+
+        <!--PARAMOS NA PÁGINA 94-->
+    
+</body>
+</html>
