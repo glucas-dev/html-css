@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Cores e Gradientes</title>
+
+    <style>
+
+        * { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        figure {
+            position: relative;
+        }
+
+        img {
+            display: block;
+        }
+
+        figcaption {
+            bottom: 5px;
+            margin: 0 5px;
+            position: absolute;
+            width: 300px;
+
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        ul {
+            height: 35px;
+            list-style: none;
+            padding: 0;
+            width: 210px;
+
+            background-color: #ccc;
+            color: white;
+            font-weight: bold;
+
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        li {
+            float: left;
+            line-height: 35px;
+            font-size: 0.9em;
+            width: 50px;
+            text-align: center;
+
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+        }
+        
+        li:first-child {
+            border-left: none;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <!--Uma outra aplicação interessante para o rgba é poder
+    combinar tons de preto e branco para escurecer ou clarear outras cores-->
+
+    <ul>
+        <li>Um</li>
+        <li>Dois</li>
+        <li>Três</li>
+        <li>Quatro</li>
+    </ul>
+
+    <figure>
+        <img src="imagens/sf.jpg" alt="A Golden Gate">
+        <figcaption>
+            San Francisco, Califórnia
+            <small>
+                Por Salim Virji (http://www.flickr.com/photos/salim/402618628)
+            </small>
+        </figcaption>
+    </figure>
+</body>
+</html>
