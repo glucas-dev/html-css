@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras e menus elegantes</title>
+
+    <style>
+        .help {
+            background-color: #F1EFE6;
+            border: 1px solid #d3cdae;
+            font-size: 0.9em;
+            padding: 10px;
+            position: relative;
+            width: 300px;
+            margin: auto;
+            box-shadow: -3px 3px 5px #AAA;
+        }
+
+        .help::before {
+            border-color: transparent transparent transparent #D3CDAE;
+            border-style: solid;
+            border-width: 20px;
+            content: '';
+            left: -40px;
+            margin-top: -18px;
+            position: absolute;
+            top: 50%;
+        }
+
+        input {
+            border: 1px solid #999;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25) inset;
+        }
+
+        input:focus {
+            border-color: #35861B;
+            box-shadow: 0px 0px 5px #35861B, 2px 2px 2px rgba(0,0,0,0.25) inset;
+            outline: none;
+        }
+
+        .nav {
+            background-color: #B9522D;
+            height: 30px;
+            list-style: none;
+            padding: 0;
+            width: 210px;
+            
+        }
+
+        .nav li {
+            float: left;
+            font-weight: bold;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            width: 70px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav .current {
+            background-color: #A64A28;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            background-color: #1D9AC0;
+            color: white;
+            padding: 10px;
+            text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+            width: 200px;
+            text-align: center;
+        }
+
+        .status {
+            display: inline-block;
+            font-weight: bold;
+            padding: 7px 10px;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .failed {
+            background-color: #BD2C00;
+        }
+        
+        .shipped {
+            background-color: #6CC644;
+        }
+
+        .processing {
+            background-color: #FC9800;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <p class="help">
+        Preencha o campo com um e-mail válido, assim poderemos entrar em contato com você para informar o resultado do nosso concurso.
+    </p>
+    
+    <!-- realçar a indicação que
+    um elemento é um campo de texto, por exemplo. -->
+
+    <p>Faça sua pesquisa aqui: <input type="text"></p>
+
+    <!-- Fazendo o mesmo com sombras internas, é possível alcançar um efeito de profundidade mais pesado, como se a superfície da sua página não fosse plana. -->
+
+    <ul class="nav">
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre</a></li>
+    </ul>
+
+    <!--Utilizando o Text-shadow-->
+
+    <h1>HTML & CSS</h1>
+
+    <!-- Imagine uma loja virtual, onde cada compra feita pode estar em um de três estados: Pagamento recusado, Produto enviado ou Em aprovação. -->
+
+    <span class="status failed">Pagamento recusado</span>
+    <span class="status shipped">Produto enviado</span>
+    <span class="status processing">Em aprovação</span>
+
+</body>
+</html>
