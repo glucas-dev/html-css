@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livro Ruby on Rails</title>
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo/normalize.css">
 
     <style>
+
+        @font-face {
+            font-family: 'iconic';
+            src: url(fonte/iconic.woff);
+            font-weight: normal;
+            font-style: normal;
+        }
+
         h1 {
             color: #BD2C00;
             font-size: 1.2em;
@@ -18,14 +26,27 @@
             margin: 5px 0;
         }
 
+        .book {
+            background-color: #FAFAFA;
+            background-image: linear-gradient(#FAFAFA,#EEE);
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            padding: 10px;
+            width: 600px;
+            /* height: 170px; */
+        }
+
         .available {
             background-color: #6CC644;
+            width: 70px;
             border-radius: 3px;
             color: white;
             font-size: 0.8em;
             font-weight: bold;
             padding: 3px 7px;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            
         }
 
         ul {
@@ -33,9 +54,59 @@
             background-image: linear-gradient(to bottom, #56B4EF, #148EDA);
             float: left;
             list-style: none;
-            margin: 10px 10px 0 0;
+            margin: 10px 10px 0px 0px;
             padding: 0;
             width: 230px;
+
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+
+
+        .icon {
+            color: #fff;
+            display: block;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px;
+            text-decoration: none;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .icon:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        .icon.paper {
+            border-top: none;
+        }
+
+        .icon.package {
+            border-bottom: none;
+        }
+
+        .icon::before {
+            font-family: 'iconic';
+            margin: 0px 5px;
+        }
+
+        .paper::before {
+            content: '\e00b';
+        }
+
+        .digital::before {
+            content: '\e044';
+        }
+
+        .package::before {
+            content: '\e022';
+        }
+
+        .clear {
+            clear: both;
         }
     </style>
 </head>
@@ -46,8 +117,10 @@
 
             <h2>Vinicius Baggio</h2>
 
-            <span class="available">
-                Disponível
+            <span>
+                <div class="available">
+                    Disponível
+                </div>
             </span>
 
             <ul>
@@ -55,10 +128,17 @@
                 <li><a href="#" class="icon digital">Compre a versão digital</a></li>
                 <li><a href="#" class="icon package">Compre o pacote completo!</a></li>
             </ul>
+
+            <p>
+                Uma ótima leitura para iniciantes afins de se aventurar no ecossistema de Ruby.
+            </p>
+
         </header>
+
+            <div class="clear"></div>
 
     </article>
 
-    PAROU NA PÁGINA 115
+    
 </body>
 </html>
