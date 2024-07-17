@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compreenda o uso de POSITION</title>
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <style>
+
+        .box-relative {
+            position: relative;
+            background-color: papayawhip;
+            height: 100px;
+            width: 100px;
+            top: 30px;
+            left: 5px;
+        }
+
+        h1 {
+            background-color: lightblue;
+            position: absolute;
+            top: 150px;
+            left: 30px;
+        }
+
+        header {
+            position: relative;
+            height: 150px;
+            margin-top: 30px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!--exemplo position relativo, altera a posição mas não afeta elementos ao redor, como no caso da margin. nesse caso, a div box sobre o parágrafo-->
+    
+    <div class="box-relative"> teste</div>
+    <p>parágrafo de teste</p>
+
+    <!--Então, elementos absolutos são relativos a um elemento pai. Caso nenhum elemento acima dele na hierarquia da sua página atenda a esse critério, o body será usado como referência.-->
+
+    <h1>Posicionado com "absolute"</h1>
+    <!--Como não está em nenhum conteiner, elemento pai, o h1 terá position em relação ao body-->
+
+    <header>
+        <h1>Posicionado com "absolute"</h1>
+    </header>
+
+    <!-- <p>PAROU NA PAGINA </p> -->
+
+    
+</body>
+</html>
