@@ -7,25 +7,116 @@
 
     <style>
         
-        p {
-            background-color: limegreen;
+        .posts {
+            background-color: orange;
+            width: 600px;
+            float: left;
         }
 
-        span {
-            background-color: lightblue;
-            display: inline-block;
+        h1 {
+            float: left;
+            margin: 0 0 20px;
+        }
+
+        .timestamp {
+            /* usando cores para facilitar configuracao */
+            background-color: #000;
+            color: #fff;
+            float: right;
+            font-size: 0.9em;
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+
+        p {
+            clear: both;
+        }
+
+        aside {
+            background-color: #FFFBE4;
+            border: 1px solid #C9BC8F;
+            float: right;
+            padding: 10px;
+            width: 200px;
+        }
+
+        aside h3 {
+            margin: 0;
+        }
+
+        .page {
+            /* usando cores para facilitar configuracao */
+            background-color: #E8E8E8;
+            padding: 10px;
+            margin: 0 auto;
+            width: 830px;
+        }
+
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
         }
     </style>
 </head>
 <body>
 
-    <span>inline-block</span>
-    <span>inline-block</span>
-    <span>inline-block</span>
-    <br>
-    <span>inline-block</span><span>inline-block</span>
+    <h2>#1</h2>
+    <h4>560 pontos</h4>
+    <p> Prêmio para o campeão: 1 MacBook Pro 15"</p>
 
-    parou na página 122
+    <!-- Outra aplicação tradicional da propriedade float é para alinhar imagens e textos, similar a uma matéria de jornal, em que a imagem fica ao lado do texto que a acompanha. -->
+
+    <h3>How I Met Your Mother</h3>
+
+    <img src="imagens/himym.png" alt="HIMYM">
     
+    <p>
+        A série gira em torno da vida de Ted Mosby e dos seus amigos, que é narrada pelo próprio aos seus filhos, 25 anos mais tarde. Bob Saget, como Ted Mosby do futuro, conta então aos filhos as histórias e peripécias que o levaram a conhecer a mãe deles. As outras personagens principais são Marshall Eriksen, Robin Scherbatsky, Lily Aldrin e Barney Stinson.
+    </p>
+    
+    <p>
+        Em 2005, aos 27 anos, o jovem Ted Mosby (Josh Radnor), após o seu melhor amigo, Marshall Eriksen (Jason Segel), ficar noivo, decide finalmente ir em busca da sua cara-metade. Com gestos românticos questionáveis, Ted conhece Robin Scherbatsky (Cobie Smulders), no bar que costumavam frequentar, Maclaren's Pub.
+    </p>
+
+    <!-- Da mesma forma que organizamos elementos em exemplos menores, podemos organizar os principais elementos da página usando float. -->
+
+    <div class="page clearfix">
+        <section class="posts">
+            <article>
+                <h1><a href="#">Título do post #1</a></h1>
+                <span class="timestamp">3 semanas atrás</span>
+                <p>
+                    Uma breve descrição sobre assunto abordado no post número 1...
+                </p>
+            </article>
+            <article>
+                <h1><a href="#">Título do post #2</a></h1>
+                <span class="timestamp">3 semanas atrás</span>
+                <p>
+                    Uma breve descrição sobre o assunto abordado no post número 2...
+                </p>
+            </article>
+        </section>
+            <aside>
+                <h3>Veja outros posts:</h3>
+                <ol>
+                    <li><a href="#">Post #1</a></li>
+                    <li><a href="#">Post #2</a></li>
+                    <li><a href="#">Post #3</a></li>
+                    <li><a href="#">Post #4</a></li>
+                </ol>
+            </aside>
+    </div>
+
+    <p>PAREI NA PÁGINA 133</p>
 </body>
 </html>
