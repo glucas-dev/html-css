@@ -10,17 +10,26 @@
 
     <h1>Meu primeiro formulário</h1>
     
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p> 
             <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome"></p>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome" required></p>
         
         
-        <p>Sobrenome: 
+        <p> 
+            <label for="sobrenome">Sobrenome:</label>
             <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required></p>
-        <label for="sobrenome"></label>
 
+        <h2>Qual melhor animal de estimação?</h2>
+            
+        <p> 
+            <input type="checkbox" name="Cachorro" id="">
+            <label for="Cachorro">Cachorro</label>
+        </p>
+           
         <p><input type="submit" value="Enviar"></p>
+
+
     </form>
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de colunas para separar conteúdos</title>
+    <link rel="stylesheet" href="estilo/normalize.css">
+
+    <style>
+
+        p {
+            column-count: 3;
+            column-gap: 10px;
+            column-rule: 1px solid #666;
+            font-size: 0.9em;
+            width: 500px;
+            text-align: left;
+        }
+
+        .flexbox {
+            display: flex;
+            height: 60px;
+            width: 98vw;
+        }
+
+        .one { background-color: #8820DD;}
+        .two { background-color: #2BB15A;}
+        .three { background-color: #755322;}
+        .four { background-color: #02A3A3;}
+        .five { background-color: #C6363D;}
+
+        .box {
+            color: black;
+            display: block;
+            flex: auto;
+            font-weight: bold;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <p>
+        Firefly é uma série de ficção científica criada pelo
+        escritor/diretor Joss Whedon, criador de Buffy: A Caça
+        Vampiros, Angel e Dollhouse, com sua companhia de produção Mutant Enemy Productions. Seu ambiente futurista naturalista, modelado a partir de temas dos filmes de Western tradicionais, apresenta um cenário de ficção científica atípico para a narrativa. Whedon também trabalhou como produtor executivo, junto com Tim Minear.
+    </p>
+
+    <div class="flexbox">
+        <span class="one box">1</span>
+        <span class="two box">2</span>
+        <span class="three box">3</span>
+        <span class="four box">4</span>
+        <span class="five box">5</span>
+    </div>
+
+
+
+
+
+</body>
+</html>
