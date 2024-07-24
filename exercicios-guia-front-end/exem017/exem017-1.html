@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando formulários simples:</title>
+    <link rel="stylesheet" href="estilo/normalize.css">
+
+    <style>
+        label {
+            display: none;
+            /* width: 80px; */
+        }
+
+        input {
+            display: block;
+            border-radius: 3px solid #999;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            font-size: 0.8em;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        input [type="password"] {
+            border-radius: 0 0 3px 3px;
+            border-top: none;
+        }
+
+        button {
+            margin-top: 5px;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #666;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        ::-moz-input-placeholder {
+            color: #666;
+            font-style: italic;
+            font-weight: normal;
+
+        }
+
+        :-ms-input-placeholder {
+            color: #666;
+            font-style: italic;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h2>Criando formulários simples:</h2>
+
+    <form action="#" method="post">
+
+        
+            <label for="username">Usuário</label>
+            <input type="text" id="username" placeholder="Usuário" autofocus>
+        
+
+       
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Senha">
+        
+
+       <button>Entrar</button>
+
+    </form>
+</body>
+</html>
