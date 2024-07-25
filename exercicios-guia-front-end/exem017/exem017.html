@@ -28,18 +28,24 @@
         }
         
         .hint {
+            display: inline-block;
             background-color: #FFFBE4;
             border-radius: 3px;
             border: 1px solid #CCC;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-            display: none;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);     
             font-size: 0.8em;
-            margin-left: 20px;
+            /* margin-left: 20px; */
             padding: 3px;
+            opacity: 0;
+            /* transition: opacity 0.5s, margin-left 0.5s; */
+            transition: all 0.5s;
+            
         }
 
         input:focus + .hint, textarea:focus + .hint {
-            display: inline-block;
+            opacity: 1;
+            margin-left: 20px;
+            
         }
 
         .error {
