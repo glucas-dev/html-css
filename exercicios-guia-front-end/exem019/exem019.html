@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFEITOS ROTATE, SCALE, SKEW E TRANSLATE</title>
+    <link rel="stylesheet" href="estilo/normalize.css">
+
+    <style>
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            margin-left: 10px;
+            position: relative;
+            transform: skew(10deg, 10deg);
+        }
+
+        span {
+            display: block;
+            color: #153755;
+            font-weight: bold;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        li:nth-child(even) {
+            transform: rotate(5deg);
+            
+        }
+
+        li:nth-child(odd) {
+            transform: rotate(-5deg);
+        }
+
+        li:hover {
+            transform: scale(1.3);
+            z-index: 1;
+        }
+
+        ul img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reforços na Plataformatec em 2012</h1>
+
+    <ul>
+        <li>
+            <img src="imagens/html-css.jpg" alt="logo">
+            <span>Erich Kist</span>
+        </li>
+        <li>
+            <img src="imagens/html-css.jpg" alt="logo">
+            <span>Lucas Mazza</span>
+        </li>
+        <li>
+            <img src="imagens/html-css.jpg" alt="logo">
+            <span>Carlos Galdino</span>
+        </li>
+        <li>
+            <img src="imagens/html-css.jpg" alt="logo">
+            <span>Rondy Sousa</span>
+        </li>
+    </ul>
+
+    <P>PAROU NA SEÇÃO 8.3</P>
+</body>
+</html>
